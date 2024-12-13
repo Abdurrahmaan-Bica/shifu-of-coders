@@ -1,3 +1,30 @@
 body{
     background:url("/assets/images/background-image.jpg");
+    font-family: "Press Start 2P", system-ui;
 }
+
+.wrapper {
+    text-align: center;
+}
+.pixel-button {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-family: "Press Start 2P", cursive; 
+    font-size: 14px;
+    animation: color-change 2s infinite;
+    color: #000;
+    background-color: #25ad19; 
+    border: 4px solid #C98269; 
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 4px 4px 0px #C98269;
+    transition: all 0.2s ease;
+  }
+  .pixel-button:hover {
+    background-color: transparent;
+    box-shadow: 2px 2px 0px #C98269; 
+    transform: translate(2px, 2px);
+  }
+  
