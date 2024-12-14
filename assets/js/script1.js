@@ -38,6 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (selectedItem.textContent === 'Projects') {
                 window.location.href = 'projects.html'; // Redirect to Projects page
             }
+            else if (selectedItem.textContent === 'Exit') {
+                window.location.href = 'exit.html'; // Redirect to the exit page
+            }
         }
     });
 });
