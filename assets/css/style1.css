@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: "Press Start 2P", cursive; 
+    display: flex;
+    height: 100vh;
+}
+
+
+.left {
+    flex: 1;
+    /* background: url('https://via.placeholder.com/600x800/ff7f7f/333333?text=Left') center center no-repeat; */
+    background: linear-gradient(217deg, rgba(248, 248, 248, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(336deg, #f5c71a, rgba(0,0,255,0) 70.71%);
+    background-size: cover;
+}
+
+/* Central section with navbar */
+.center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+    color: white;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 50px; 
+}
+.navbar h1 {
+    white-space: nowrap; 
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #444;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #f5c71a;
+    color: #333;
+}
+
+/* right section */
+.right {
+    flex: 1;
+    /* background: url('https://via.placeholder.com/600x800/7f7fff/333333?text=Right') center center no-repeat; */
+    background: linear-gradient(217deg, rgba(248, 248, 248, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(336deg, #f5c71a, rgba(0,0,255,0) 70.71%);
+    background-size: cover;
+}
+
+
+.content {
+    margin-left: 270px; 
+    padding: 10px;
+}
