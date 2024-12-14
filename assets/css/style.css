@@ -24,7 +24,9 @@ body{
   background-color: rgba(0, 0, 0, 0.678); 
   animation: color-change 0.8s infinite;
 }
-
+a {
+  text-decoration: none; 
+}
 .pixel-button {
     text-align: center;
     font-family: "Press Start 2P", cursive; 
