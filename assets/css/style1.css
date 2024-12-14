@@ -21,7 +21,7 @@ body {
     padding: 20px 20px;
     border: 4px solid #C98269;
     background-color: rgba(0, 0, 0, 0.678);
-    animation: color-change 0.8s infinite;
+    animation: color-change 0.8s infinite; 
 }
 
 a {
@@ -45,7 +45,7 @@ button {
 }
 
 .menu-item {
-    background-color: #555;
+    background-color: rgba(0, 0, 0, 0.678);
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
