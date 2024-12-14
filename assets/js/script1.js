@@ -1,45 +1,54 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuItems = document.querySelectorAll('.menu-item');
-    const navigationSound = document.getElementById('navigationSound'); 
+    const navigationSound = document.getElementById('navigationSound');  // Sound when navigating
+    const selectionSound = new Audio('assets/audio/selection-sound.mp3');  // Sound when selecting
     let currentIndex = 0;
 
-    // Highlight the first option
+    // Highlighting the first option
     menuItems[currentIndex].classList.add('selected');
 
-    // Ensure the audio is loaded before  to playiing
+    // Ensure the audio is loaded before playing
     navigationSound.load();
+    selectionSound.load();
 
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowDown') {
             menuItems[currentIndex].classList.remove('selected');
-            // Move to the next item 
+            // Moving to the next item
             currentIndex = (currentIndex + 1) % menuItems.length;
             menuItems[currentIndex].classList.add('selected');
             
-            // Play sound when navigating
+            // Play navigation sound when moving with arrows
             navigationSound.currentTime = 0; 
-            navigationSound.play().catch(error => console.log("Audio playback failed:", error)); // Ensure no errors
+            navigationSound.play().catch(error => console.log("Audio playback failed:", error)); 
         } else if (e.key === 'ArrowUp') {
             menuItems[currentIndex].classList.remove('selected');
             
+            // Move to the previous item
             currentIndex = (currentIndex - 1 + menuItems.length) % menuItems.length;
             menuItems[currentIndex].classList.add('selected');
             
-            // Play sound when navigating
-            navigationSound.currentTime = 1;
+           
+            navigationSound.currentTime = 0; 
             navigationSound.play().catch(error => console.log("Audio playback failed:", error)); 
         } else if (e.key === 'Enter') {
             const selectedItem = menuItems[currentIndex];
-            alert(`You selected: ${selectedItem.textContent}`);
-
-            // Navigate based on the selected item
-            if (selectedItem.textContent === 'Home') {
-                window.location.href = '/';  // Redirect to homepage
-            } else if (selectedItem.textContent === 'About Me') {
-                window.location.href = 'about.html';  // Change to the cabout page
-            } else if (selectedItem.textContent === 'Projects') {
-                window.location.href = 'projects.html'; // Change to projects page
-            }
+            // Play selection sound before redirecting
+            selectionSound.play().then(() => {
+                
+                if (selectedItem.textContent === 'Home') {
+                    window.location.href = '/';  // Redirect to homepage
+                } else if (selectedItem.textContent === 'About Me') {
+                    window.location.href = 'about.html';  // Redirect to About Me page
+                } else if (selectedItem.textContent === 'Projects') {
+                    window.location.href = 'projects.html'; // Redirect to Projects page
+                }
+            }).catch(error => {
+                // In case the audio fails to load or play
+                console.log("Selection sound playback failed:", error);
+                
+                window.location.href = selectedItem.querySelector('a').href;
+            });
         }
     });
 });
