@@ -41,6 +41,18 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (selectedItem.textContent === 'Exit') {
                 window.location.href = 'exit.html'; // Redirect to the exit page
             }
+            else if (selectedItem.textContent === 'Conversor de Peso') {
+                window.location.href = 'https://conversor-de-peso.vercel.app'; // Redirect to Project page
+            }
+            else if (selectedItem.textContent === 'Password Generator') {
+                window.location.href = 'https://password-generat0r.vercel.app'; // Redirect to Project page
+            }
+            else if (selectedItem.textContent === 'Rock Paper Scissors') {
+                window.location.href = 'https://abdurahmaan-rock-paper-scissors-game.vercel.app'; // Redirect to Project page
+            }
+            else if (selectedItem.textContent === 'Back') {
+                window.location.href = 'start.html'; // Redirect to the start page
+            }
         }
     });
 });
