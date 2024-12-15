@@ -42,4 +42,4 @@ This README provides an overview of the websites's functionality, features and h
 
 
 ## 🛠️ Deployment
-I deployed the Password Generator using Vercel, which offers an intuitive interface for deploying web applications.
+I deployed the website using Vercel, which offers an intuitive interface for deploying web applications.
