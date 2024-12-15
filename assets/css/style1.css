@@ -16,13 +16,14 @@ body {
     overflow: hidden; 
 }
 
-/* Main screen with*/
+/* Main screen*/
 .main-container {
     width: 800px; /* fixed width */
     height: 600px; /* fixed height */
     background-color: #00008B; 
     display: flex;
     flex-direction: row; 
+    
 }
 button{
     font-family: 'Press Start 2P', cursive;
@@ -42,6 +43,7 @@ button{
     align-items: center;
     justify-content: center;
     background-color: #00008B;
+    border: 2px solid #b0b0b0;
     padding: 20px;
     
 }
@@ -65,6 +67,7 @@ button{
     max-width: 500px;
     background-color: black;
     padding: 20px;
+    
     border-radius: 8px;
 }
 
@@ -93,3 +96,6 @@ h6 {
     margin-top: 20px;
     font-size: 12px;
 }
+
+
+

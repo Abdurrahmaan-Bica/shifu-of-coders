@@ -1,0 +1,76 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1a1a1a; 
+    color: #b0b0b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main screen with */
+.main-container {
+    width: 800px; 
+    height: 600px; 
+    background-color: #00008B; 
+    display: flex;
+    flex-direction: row;
+}
+
+/* Left and Right Sections */
+.left, .right {
+    flex: 1;
+    background-size: cover;
+    background-color: #00008B;
+}
+
+
+.center {
+    width: 600px; 
+    height: 400px; 
+    background-color: #00008B;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    border: 2px solid #b0b0b0; 
+  
+}
+
+#menu {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#menu p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    color: #b0b0b0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 560px; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    border-right: .15em solid transparent; 
+}
+
+h6 {
+    font-size: 12px;
+    text-align: center;
+    color: #b0b0b0;
+    margin-top: 20px;
+}
