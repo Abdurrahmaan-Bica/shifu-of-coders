@@ -63,6 +63,27 @@ body {
     box-sizing: border-box;
     padding: 20px 6px 6px;
 }
+.tv-button {
+    position: absolute; 
+    top: 5px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    background-color: #736d60;
+    color: white;
+    border: 2px solid #3b3337; 
+    border-radius: 5px; 
+    padding: 5px 15px;
+    cursor: pointer;
+    box-shadow: inset 2px 2px 0px #33302f; 
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tv-button:hover {
+    transform: translateX(-50%) translateY(1px); 
+    box-shadow: inset 1px 1px 0px #000;
+}
 
 .message {
     position: absolute;
@@ -81,5 +102,4 @@ body {
 @keyframes color-change {
   0% { color: black; } 
   100% { color: #FF073A; } 
- 
 }
