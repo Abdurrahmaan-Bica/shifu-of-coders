@@ -14,4 +14,4 @@ function typewriterEffect(elementId, text, speed) {
 }
 
 // Function call to start typing effect.
-typewriterEffect('typewriter-text', 'Hello, my name is Abdurrahmaan, a Mechatronics Engineering student. In my first year, I struggled with Java and could not even write a basic Hello World program. Determined to improve, I turned to online tutorials and practiced daily until I passed all my programming courses. Mastering any skill, like coding, requires consistent practice and discipline.', 50);
+typewriterEffect('typewriter-text', 'Hello, my name is Abdurrahmaan, a Mechatronics Engineering student. In my first year, I struggled with Java and could not even write a basic Hello World program. Determined to improve, I turned to online tutorials and practiced daily until I passed all my programming courses. Mastering any skill, like coding, requires consistent practice and discipline.', 100);
