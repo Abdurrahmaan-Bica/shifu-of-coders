@@ -1,21 +1,38 @@
+
 * {
-    margin: 0;
+    margin: -10px;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Press Start 2P', cursive;
-    background-color: #00008B;
+    background-color: #1a1a1a; 
     color: #b0b0b0;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    overflow: hidden; 
+}
+
+/* Main screen with*/
+.main-container {
+    width: 800px; /* fixed width */
+    height: 600px; /* fixed height */
+    background-color: #00008B; 
+    display: flex;
     flex-direction: row; 
 }
 button{
     font-family: 'Press Start 2P', cursive;
 }
 
+.left, .right {
+    flex: 1;
+    background-size: cover;
+    background-color: #00008B;
+}
 
 
 .center {
@@ -26,6 +43,7 @@ button{
     justify-content: center;
     background-color: #00008B;
     padding: 20px;
+    
 }
 
 .center-heading {
@@ -74,19 +92,4 @@ p {
 h6 {
     margin-top: 20px;
     font-size: 12px;
-}
-
-
-
-.left {
-    flex: 1;
-    background-size: cover;
-    background-color: #b0b0b0;  
-}
-
-.right {
-    flex: 1;
-    
-    background-size: cover;
-    background-color: black;  
 }
